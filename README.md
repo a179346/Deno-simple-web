@@ -31,7 +31,6 @@ app.get("/movies", async (req, res) => {
     movies: getMovies(),
   });
   res.body = output;
-  res.toHttpResponse();
 });
 
 const server = await app.listen(port);
